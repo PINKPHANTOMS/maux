@@ -1,0 +1,264 @@
+<html>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" href="images\logo\main.PNG">
+<link rel="stylesheet">
+
+<title>
+
+  NOFACE
+
+</title>
+
+
+
+  <style>
+	  
+	  divMoveRight {
+  animation-fill-mode: forwards !important; 
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: moveRight;
+  animation-duration: 5s;
+
+}
+
+@keyframes moveRight {
+  0%  {left:-80vw; top:10vw;}
+  25%  {left: -38vw; top:10vw;}
+  100% {left: -38vw; top: 10vw}
+}
+
+	  divMoveLeft {
+  animation-fill-mode: forwards !important; 
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: moveLeft;
+  animation-duration: 5s;
+
+}
+
+@keyframes moveLeft {
+  0%   {left:150vw; top:10vw;}
+  25%  {left:75vw; top:10vw;}
+  100%  {left:75vw; top:10vw;}
+
+}
+	  divMoveDown {
+  width: 100vw;
+  height: 100vw;
+  position: relative;
+  animation-name: moveDown;
+  animation-fill-mode: none;
+  animation-duration: 5s;
+}
+
+@keyframes moveDown {
+  0%   {left:0vw; top:-200vw;}
+  25%  {left:0vw; top:0px;}
+}
+
+	  divMoveUp {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: moveUp;
+  animation-duration: 5s;
+}
+
+@keyframes moveUp {
+  0%   {left:0vw; top:200vw;}
+  25%  {left:0vw; top:0px;}
+}
+
+	  
+@font-face {
+   font-family: fontBoi;
+   src: url(fonts/evilEmpire.otf);
+}
+
+* {
+   font-family: fontBoi;
+}
+
+divMedia{
+	line-height: .9;
+	}
+	  
+	body{
+	margin-left: 0px;
+	margin-top: 0px;
+	overflow-x: hidden;
+	}
+
+  .center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+	.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: -50%;
+  padding-top: 56.25%;
+   /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+  .button {
+
+background-color: none;
+  border: none;
+  color: white;
+  text-align: center;
+
+  /*padding: 0px 0px;*/
+  /*text-align: center;*/
+  text-decoration: none;
+  display: inline-block;
+  font-size: 70px;
+  /*margin: 4px 2px;*/
+  /*position: relative;*/
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1{
+  background-color: none;
+  color: black;
+  text-align:center;
+  border: 2px solid #00000;
+}
+
+.button1:hover {
+  background-color: black;
+  color: black;
+}
+
+.hero-image {
+  background-image: url("\images\albumart\album1.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+  </style>
+
+
+<body bgcolor="611920">
+
+	 <divMoveRight>
+		<a href= "visualArt.html" style = "font-size: 10vw; color:black; z-index: 2; text-shadow: 0px 0px 15px orange; 10vw; text-decoration: none;">
+<center>
+	A<br>
+	R<br>
+	T<br>
+		</center>
+</a>
+</divMoveRight>	
+<divMoveLeft>	
+	<divMedia>	
+		<a href= "gallery.html" style = "font-size: 8vw; color:black; z-index: 1; text-decoration: none; text-shadow: 0px 0px 15px orange;">
+		<center>
+	M<br>
+	E<br>
+	D<br>
+	I<br>
+	A<br>
+</center>
+</a>
+</divMedia>
+</divMoveLeft>
+<center>
+		<divMoveDown>
+		<img src="images\logo\main.PNG" style="width: 65vw; z-index: 2; margin-top: -50%; margin-bottom: -10%; opacity: 1;">
+			</divMoveDown>
+		<br>
+			<br>	
+
+	
+<p style = "font-size: 100%; color:white; position: auto; z-index: 2;">
+
+	   <a href="https://soundcloud.com/max-michaud-676915130/sets/of-darke-and-whimsy" style="  text-decoration: none;">
+	<img width= '22%'; src="images\logo\soundcloud.png";>
+
+</a>
+
+<a href="https://music.apple.com/us/album/of-darke-and-whimsy/1534562306?uo=4"" style="text-decoration: none;">
+<img width= '22%'; 
+  src="images\logo\appleMusic.png">
+
+</a>
+
+<a href="https://open.spotify.com/album/57Z4NuknLeMCRzybZACQPF" style=" text-decoration: none;">
+	
+  <img width='22%'; src="images\logo\spotify.png">
+
+</a>
+
+<a href="https://noface7alt.bandcamp.com/releases" style="text-decoration: none;">
+  <img src="images\logo\BandCamp.png" width= '22%'; >
+
+</a>
+
+</p>
+
+<!-- 	<a href="https://open.spotify.com/album/57Z4NuknLeMCRzybZACQPF" button class = "button button1" style="position: relative; z-index: 2;color: white; box-shadow: 0px 0px 20px orange; cursor: pointer; font-size: 10vw; text-align: center; vertical-align: top; padding: 5% 20%;">  
+	
+Listen Now
+
+<img src="images\albumart\album1.jpg"
+
+width="100%" style="z-index: -2:">
+	</a> -->
+	
+	<divMoveUp>
+
+	<a href="https://twitter.com/noface7alt" style=" text-decoration: none; padding-right: 2%;">
+<img width= '20%'; src="images\logo\twitter.png" >
+	</a>
+	<a href="https://instagram.com/noface7alt" style=" text-decoration: none;">
+<img width= '20%'; src="images\logo\instagram.png" >
+	</a>
+</divMoveUp>
+
+<br>
+<br>
+	<!-- 	  
+	  <div class="container" style="font-size: 10vw;color: white; font-family: times new roman;"> 
+  <br>
+		<div class="container" style="font-size: 20vw;color: white; font-family: times new roman; padding-bottom: 20%;"> 
+  <p></p>
+<div class="container"> 
+	<iframe class="responsive-iframe" 
+	src="https://www.youtube.com/"
+frameborder="0">
+  </iframe>
+</div>
+</div>
+  -->
+  
+<img width='103%'; src="images\letter.pdf">
+  <p style = "color: black;">
+designed by pink phantom
+</p>
+
+
+</center>
+</body>
+</html>
+
