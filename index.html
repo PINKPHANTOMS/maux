@@ -20,7 +20,7 @@
   height: 100px;
   position: relative;
   animation-name: moveRight;
-  animation-duration: 3s;
+  animation-duration: 5s;
 
 }
 
@@ -42,8 +42,7 @@
 
 @keyframes moveLeft {
   0%   {left:150vw; top:-90vw;}
-  25%  {left:50vw; top:0vw;}
-  75%  {left:62vw; top:76vw;}
+  50%  {left:62vw; top:76vw;}
   100%  {left:62vw; top: 76vw;}
 
 
@@ -60,7 +59,9 @@
 
 @keyframes moveDown {
   0%   {left:-5vw; top:-200vw;}
+  50%  {left:-5vw; top:0px;}
   100%  {left:-5vw; top:0px;}
+
 }
 
 	  divMoveDown2 {
@@ -70,7 +71,7 @@
   position: relative;
   animation-name: moveDown2;
   animation-fill-mode: none;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 @keyframes moveDown2 {
@@ -111,8 +112,10 @@ divMedia{
 	  
 	body{
 	margin-left: 0px;
+	margin-right: 0px;
 	margin-top: 0px;
 	overflow-x: hidden;
+
 	}
 
   .center {
