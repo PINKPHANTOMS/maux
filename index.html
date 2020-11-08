@@ -6,7 +6,7 @@
 
 <title>
 
-  NOFACE
+  maux
 
 </title>
 
@@ -20,14 +20,14 @@
   height: 100px;
   position: relative;
   animation-name: moveRight;
-  animation-duration: 5s;
+  animation-duration: 4s;
 
 }
 
 @keyframes moveRight {
-  0%  {left:-80vw; top:10vw;}
-  25%  {left: -38vw; top:10vw;}
-  100% {left: -38vw; top: 10vw}
+  0%  {left:-80vw; top:-90vw;}
+  25%  {left: -27vw; top:-83vw;}
+  100% {left: -27vw; top: -83vw}
 }
 
 	  divMoveLeft {
@@ -36,29 +36,48 @@
   height: 100px;
   position: absolute;
   animation-name: moveLeft;
-  animation-duration: 5s;
+  animation-duration: 4s;
 
 }
 
 @keyframes moveLeft {
-  0%   {left:150vw; top:10vw;}
-  25%  {left:75vw; top:10vw;}
-  100%  {left:75vw; top:10vw;}
+  0%   {left:150vw; top:-90vw;}
+  25%  {left:50vw; top:55vw;}
+  75%  {left:62vw; top:65vw;}
+  100%  {left:62vw; top: 65vw;}
+
 
 }
 	  divMoveDown {
+  animation-fill-mode: forwards !important; 
   width: 100vw;
   height: 100vw;
   position: relative;
   animation-name: moveDown;
   animation-fill-mode: none;
-  animation-duration: 5s;
+  animation-duration: 3s;
 }
 
 @keyframes moveDown {
-  0%   {left:0vw; top:-200vw;}
-  25%  {left:0vw; top:0px;}
+  0%   {left:-5vw; top:-200vw;}
+  100%  {left:-5vw; top:0px;}
 }
+
+	  divMoveDown2 {
+  animation-fill-mode: forwards !important; 
+  width: 100vw;
+  height: 100vw;
+  position: relative;
+  animation-name: moveDown2;
+  animation-fill-mode: none;
+  animation-duration: 3s;
+}
+
+@keyframes moveDown2 {
+  0%   {left:10vw; top:-200vw;}
+  100%  {left:18vw; top:-127vw;}
+}
+
 
 	  divMoveUp {
   width: 100px;
@@ -76,11 +95,13 @@
 	  
 @font-face {
    font-family: fontBoi;
-   src: url(fonts/evilEmpire.otf);
+   src: url(fonts/Crumbled-Pixels.ttf);
 }
 
-* {
-   font-family: fontBoi;
+
+@font-face {
+   font-family: fontBoi2;
+   src: url(fonts/Djentfont.ttf);
 }
 
 divMedia{
@@ -159,46 +180,64 @@ background-color: none;
   </style>
 
 
-<body bgcolor="611920">
+<body bgcolor="00000">
 
-	 <divMoveRight>
-		<a href= "visualArt.html" style = "font-size: 10vw; color:black; z-index: 2; text-shadow: 0px 0px 15px orange; 10vw; text-decoration: none;">
+
+		<divMoveDown>
+		<img src="images\maux\street.jpg" style="width: 120vw; margin-top: -20vw; margin-left: -10vw; z-index: -5; margin-bottom: -10%; opacity: 1;">
+			</divMoveDown>
+			
+	 <divMoveDown2>
+		<a href= "https://instagram.com/maux.bit" style = "font-family: fontBoi2; font-size: 20vw; color:black; z-index: 2; text-shadow: 0px 0px 5px #FF07DD; 10vw; text-decoration: none; padding-bottom: -10vw;">
 <center>
-	A<br>
-	R<br>
-	T<br>
+	MAUX
 		</center>
+</a>
+</divMoveDown2>	
+	 <divMoveRight>
+		<a href= "visualArt.html" style = "font-family: fontBoi; font-size: 16vw; color:black; z-index: 1; text-shadow: 0px 0px 5px #FF07DD; 10vw; text-decoration: none;">
+		<divMedia>
+<center>
+	WATCH<br>
+		_NOW
+		</center>
+		<divMedia>
 </a>
 </divMoveRight>	
 <divMoveLeft>	
 	<divMedia>	
-		<a href= "gallery.html" style = "font-size: 8vw; color:black; z-index: 1; text-decoration: none; text-shadow: 0px 0px 15px orange;">
+		<a href= "https://instagram.com/maux.bit" style = "font-family: fontBoi; font-size: 16vw; color:black; z-index: 1; text-decoration: none; text-shadow: 0px 0px 5px #FF07DD;">
 		<center>
-	M<br>
-	E<br>
-	D<br>
-	I<br>
-	A<br>
+	LISTEN<br>
+		_HERE
 </center>
 </a>
 </divMedia>
 </divMoveLeft>
 <center>
-		<divMoveDown>
-		<img src="images\logo\main.PNG" style="width: 65vw; z-index: 2; margin-top: -50%; margin-bottom: -10%; opacity: 1;">
-			</divMoveDown>
-		<br>
-			<br>	
-
 	
-<p style = "font-size: 100%; color:white; position: auto; z-index: 2;">
+<p style = "font-size: 100%; color:white; margin-left: 5vw; margin-top: -158vw; z-index: 2; ">
+<divMoveUp>
 
-	   <a href="https://soundcloud.com/max-michaud-676915130/sets/of-darke-and-whimsy" style="  text-decoration: none;">
-	<img width= '22%'; src="images\logo\soundcloud.png";>
+  	<a href="https://twitch.com/maux_mode" style=" text-decoration: none; padding-right: 2%;">
+<img width= '17%'; src="images\logo\twitchGlitchBlackOps.png" >
+	</a>
+</p>
 
-</a>
-
-<a href="https://music.apple.com/us/album/of-darke-and-whimsy/1534562306?uo=4"" style="text-decoration: none;">
+<p style = "font-size: 100%; color:white; margin-left: 5vw; margin-top: -5vw; z-index: 2; ">
+	
+	</divMoveUp>
+	<br>
+		<br>
+			<br>
+				<br>
+					<br>
+						<br>
+							<h style = "font-family: fontBoi2; font-size: 20vw;">
+MAUX
+</h>
+	
+<!-- <a href="https://music.apple.com/us/album/of-darke-and-whimsy/1534562306?uo=4"" style="text-decoration: none;">
 <img width= '22%'; 
   src="images\logo\appleMusic.png">
 
@@ -208,14 +247,9 @@ background-color: none;
 	
   <img width='22%'; src="images\logo\spotify.png">
 
-</a>
+</a> -->
 
-<a href="https://noface7alt.bandcamp.com/releases" style="text-decoration: none;">
-  <img src="images\logo\BandCamp.png" width= '22%'; >
 
-</a>
-
-</p>
 
 <!-- 	<a href="https://open.spotify.com/album/57Z4NuknLeMCRzybZACQPF" button class = "button button1" style="position: relative; z-index: 2;color: white; box-shadow: 0px 0px 20px orange; cursor: pointer; font-size: 10vw; text-align: center; vertical-align: top; padding: 5% 20%;">  
 	
@@ -226,18 +260,9 @@ Listen Now
 width="100%" style="z-index: -2:">
 	</a> -->
 	
-	<divMoveUp>
 
-	<a href="https://twitter.com/noface7alt" style=" text-decoration: none; padding-right: 2%;">
-<img width= '20%'; src="images\logo\twitter.png" >
-	</a>
-	<a href="https://instagram.com/noface7alt" style=" text-decoration: none;">
-<img width= '20%'; src="images\logo\instagram.png" >
-	</a>
-</divMoveUp>
 
-<br>
-<br>
+
 	<!-- 	  
 	  <div class="container" style="font-size: 10vw;color: white; font-family: times new roman;"> 
   <br>
@@ -252,10 +277,7 @@ frameborder="0">
 </div>
   -->
   
-<img width='103%'; src="images\letter.pdf">
-  <p style = "color: black;">
-designed by pink phantom
-</p>
+
 
 
 </center>
