@@ -1,6 +1,7 @@
 <html>
 
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="icon" href="images\logo\main.PNG">
 <link rel="stylesheet" href="styles.css">
 
@@ -25,9 +26,9 @@
 }
 
 @keyframes moveRight {
-  0%  {left:-80vw; top:-90vw;}
-  25%  {left: -27vw; top:-83vw;}
-  100% {left: -27vw; top: -83vw}
+  0%  {right:80vw; top:20vw;}
+  25%  {right: 30vw; top:30vw;}
+  100% {right: 30vw; top: 30vw}
 }
 
 	  divMoveLeft {
@@ -42,8 +43,8 @@
 
 @keyframes moveLeft {
   0%   {left:150vw; top:-90vw;}
-  50%  {left:62vw; top:76vw;}
-  100%  {left:62vw; top: 76vw;}
+  50%  {left:62vw; top:80vw;}
+  100%  {left:62vw; top: 80vw;}
 
 
 }
@@ -58,9 +59,9 @@
 }
 
 @keyframes moveDown {
-  0%   {left:-5vw; top:-200vw;}
-  50%  {left:-5vw; top:100vw;}
-  100%  {left:-5vw; top:100vw;}
+  0%   {left:0vw; top:-200vw;}
+  50%  {left:0vw; top:0vw;}
+  100%  {left:0vw; top:0vw;}
 
 }
 
@@ -71,13 +72,13 @@
   position: relative;
   animation-name: moveDown2;
   animation-fill-mode: none;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 @keyframes moveDown2 {
-  0%   {left:0vw; top:-75vw;}
-  25%   {left:0vw; top:-75vw;}
-  100%  {left:18vw; top:-135vw;}
+  0%   {left:0vw; top:100vw;}
+  25%   {left:0vw; top:10vw;}
+  100%  {left:18vw; top:10vw;}
 }
 
 
@@ -92,8 +93,8 @@
 
 @keyframes moveUp {
   0%   {left:0vw; top:100vw;}
-  25%  {left:0vw; top:0px;}
-  100%  {left:0vw; top:0px;}
+  25%  {left:0vw; top:40px;}
+  100%  {left:0vw; top:40px;}
 
 }
 
@@ -114,9 +115,9 @@ divMedia{
 	}
 	  
 	body{
-	margin-left: 0vw;
-	margin-right: 0vw;
-	margin-top: -100vw;
+	height: 100%;
+	padding: 0;
+	margin: 0;
 	overflow-x: hidden;
 
 	}
@@ -176,7 +177,7 @@ background-color: none;
 }
 
 .hero-image {
-  background-image: url("\images\albumart\album1.jpg");
+  background-image: url("/images/maux/street.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -189,32 +190,32 @@ background-color: none;
 
 <body bgcolor="00000">
 	
-	
 <center>
 
-		<divMoveDown>
-		<img src="images\maux\street.jpg" style="position: relative; width: 120vw; left: -10vw; ; z-index: -2; opacity: 1;">
+<divMoveDown>
+		<img src="images\maux\street.jpg" style=" width: 100vw; margin-bottom: -150vw; right: 10vw;z-index: -2; opacity: 1;">
 			</divMoveDown>
 			
+			
 	 <divMoveDown2>
-		<a href= "https://instagram.com/maux.bit" style = "position: relative; top: 90vw; font-family: fontBoi2; font-size: 20vw; color:blue; z-index: 2; text-shadow: 0px 0px 7px #FF07DD; text-decoration: none;">
+		<a href= "https://instagram.com/maux.bit" style = "position: relative; font-family: fontBoi2; font-size: 20vw; color:blue; z-index: 2; text-shadow: 0px 0px 7px #FF07DD; text-decoration: none;">
 
 	MAUX<br>
 </a>
 
+</divMoveDown2>
 
 	<divMoveUp>
 
-  	<a href="https://twitch.com/maux_mode" style=" z-index: 2; position: relative; top: 90vw; right: 15vw; text-decoration: none;">
+  	<a href="https://twitch.com/maux_mode" style=" z-index: 2; position: relative; text-decoration: none;">
 <img width= '25%'; src="images\logo\TwitchGlitchWhite.png" >
 	</a>	
 	</divMoveUp>
-	
-	
+		
 
-</divMoveDown2>	
+
 	 <divMoveRight>
-		<a href= "visualArt.html" style = "font-family: fontBoi; font-size: 16vw; position: relative; top: 55vw; color:blue; z-index: 1; text-shadow: 0px 0px 7px #FF07DD; 10vw; text-decoration: none;">
+		<a href= "visualArt.html" style = "font-family: fontBoi; font-size: 16vw; position: relative; color:blue; z-index: 1; text-shadow: 0px 0px 7px #FF07DD; text-decoration: none;">
 		<divMedia>
 <center>
 	WATCH<br>
@@ -224,8 +225,9 @@ background-color: none;
 </a>
 </divMoveRight>	
 
+
 <divMoveLeft>		
-		<a href= "https://soundcloud.com/iammaux" style = "position: relative; top: 5vw; font-family: fontBoi; font-size: 16vw; color:blue; z-index: 1; text-decoration: none; text-shadow: 0px 0px 7px #FF07DD;">
+		<a href= "https://soundcloud.com/iammaux" style = "position: relative; font-family: fontBoi; font-size: 16vw; color:blue; z-index: 1; text-decoration: none; text-shadow: 0px 0px 7px #FF07DD;">
 		<divMedia>
 		<center>
 	LISTEN<br>
@@ -236,7 +238,8 @@ background-color: none;
 </a>
 
 </divMoveLeft>
-		<a href= "https://soundcloud.com/iammaux" style = "position: relative; font-family: fontBoi; font-size: 25vw; color:blue; z-index: 1; text-decoration: none; text-shadow: 0px 0px 7px #FF07DD;">
+
+		<a href= "https://soundcloud.com/iammaux" style = "position: relative; font-family: fontBoi; top: 50vw; font-size: 25vw; color:blue; z-index: 1; text-decoration: none; text-shadow: 0px 0px 7px #FF07DD;">
 		<divMedia>
 		<center>
 	SEE MORE
@@ -285,6 +288,8 @@ frameborder="0">
 </div>
   -->
   
+  </center>
+  </div>
 </body>
 </html>
 
