@@ -15,27 +15,58 @@
 
   <style>
 
-	  divMoveRight {
-  animation-fill-mode: forwards !important;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  animation-name: moveRight;
-  animation-duration: 5s;
+	.imgContain2{
+		position: relative;
+		width: 100%
+		border: 3px solid black;
+		border-radius: 16px;
+	}
+	.imgContain2 a {
+		z-index: 1;
+}
+
+
+.imgContain2 img {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
+
+	.imgContain{
+		background-image: url(images/maux/soon.jpg);
+		background-size: cover;
+		position: relative;
+		width: 100%
+		right: 0;
+		padding: 0;
+		margin: 0;
+		border: 3px solid black;
+		border-radius: 16px;
+	}
+
+	divMoveRight {
+		animation-fill-mode: forwards !important;
+		position: relative;
+		animation-name: moveRight;
+		animation-duration: 5s;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
 }
 
 @keyframes moveRight {
   0%  {right:80vw; top:20vw;}
-  25%  {right: 15vw; top:-25vw;}
-  100% {right: 15vw; top: -25vw}
+  25%  {right: 0; top:0;}
+  100% {right: 0; top: 0;}
 }
 
-	  divMoveLeft {
+divMoveLeft {
   animation-fill-mode: forwards !important;
-  width: 100px;
-  height: 100px;
-  position: absolute;
+  position: relative;
   animation-name: moveLeft;
   animation-duration: 3s;
 
@@ -43,8 +74,8 @@
 
 @keyframes moveLeft {
   0%   {left:150vw; top:-90vw;}
-  50%  {left:53vw; top:102vw;}
-  100%  {left:53vw; top: 102vw;}
+  50%  {left:0; top:0;}
+  100%  {left:0; top: 0;}
 
 
 }
@@ -112,14 +143,15 @@
 
 divMedia{
 	line-height: .6;
+	position: absolute;
 	}
 
 iframe {
-	border-radius: 3vw;
+	border-radius: 16px;
 }
 
 img {
-	border-radius: 3vw;
+	border-radius: 16px;
 	text-align: center;
 }
 
@@ -129,8 +161,12 @@ p {
 
 	body{
 	height: 100%;
+	max-width: 700px;
+	-webkit-background-size: 2650px 1440px;
+	text-align: center;
+	display: block;
 	padding: 16px;
-	margin: 0;
+	margin: auto;
 	background-image: url("images/bg.jpg");
 	background-size: cover;
 	background-attachment: fixed;
@@ -138,16 +174,10 @@ p {
 
 	}
 
-  .center {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
 	.container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  margin-top: -50%;
   padding-top: 56.25%;
    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
@@ -162,8 +192,7 @@ p {
   height: 100%;
 }
   .button {
-
-background-color: none;
+	background-color: none;
   border: none;
   color: white;
   text-align: center;
@@ -192,71 +221,64 @@ background-color: none;
   color: black;
 }
 
-.hero-image {
-  background-image: url("/images/maux/street.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
   </style>
 
 
 <body>
-
-	<center>
-				<divMoveDown>
-				<p style ="margin-top:10vw; font-family: fontBoi; font-size: 10vw; position: relative; color:gold; z-index: 1; text-shadow: 0px 0px 7px #FF07DD; text-decoration: none; z-index: 1;">
+	<divMoveDown>
+				<p style ="margin-top:10vw; font-family: fontBoi; font-size: 8vw; position: relative; color:gold; z-index: 1; text-shadow: 0px 0px 7px #FF07DD; text-decoration: none; z-index: 1;">
 				<a href = "https://youtu.be/UkmlRvEq-Ek" style ="color: gold; text-decoration: none;">
 				GOLDCHAIN_COLTRANE REMIX
 
 				</a>
-
-		<iframe width="100%" height="175vw" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/934771702&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 3vw; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; margin-top:-5vw; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/iammaux" title="M A U X" target="_blank" style="color: #cccccc; text-decoration: none;">M A U X</a> · <a href="https://soundcloud.com/iammaux/goldchain_coltrane-maux-remix" title="GOLDCHAIN_COLTRANE - MAUX REMIX" target="_blank" style="color: #cccccc; text-decoration: none;">GOLDCHAIN_COLTRANE - MAUX REMIX</a></div>
-		</p>
+			</p>
 
 
-				<p style ="margin-bottom: 0vw;font-family: fontBoi; font-size: 13vw; padding-bottom: 0vw; position: relative; color:gold; text-shadow: 0px 0px 7px #FF07DD; text-decoration: none; z-index: 1;">
-		tap below to watch
+		<iframe width="100%" height="175vw" scrolling="no" frameborder="no" allow="autoplay"
+		src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/934771702&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=false">
+	</iframe>
+		<div style="font-size: 3vw; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+			<a href="https://soundcloud.com/iammaux" title="M A U X" target="_blank" style="color: #cccccc; text-decoration: none;">
+				M A U X
+			</a> ·
+			<a href="https://soundcloud.com/iammaux/goldchain_coltrane-maux-remix" title="GOLDCHAIN_COLTRANE - MAUX REMIX" target="_blank" style="color: #cccccc; text-decoration: none;">
+				GOLDCHAIN_COLTRANE - MAUX REMIX</a>
+			</div>
 
-<div style="text-align: center;">
-	<a href="https://soonspins.com/livestream" style = "text-decoration: none;">
 
 
-		<img src="images\maux\soon.jpg" width="95%"
-		style = "margin-top: 0vw; z-index: -1;">
 
-	<img src="images\logo\soonspins.png" width="100%"
-	style = "margin-top: -60vw;z-index: 1;">
+		<p style ="font-family: fontBoi; font-size: 8vw; position: relative; color:gold; text-shadow: 0px 0px 7px #FF07DD; text-decoration: none; z-index: 1;">
+		watch my dj set on
 
-	</a>
+<div class = "imgContain">
+
+		<a href="https://soonspins.com/livestream" style = "text-decoration: none;">
+	<img src="images\logo\soonspins.png" width="100%" style = "top: 0;left: 0;z-index: 1;">
+</a>
 </div>
 </p>
 
-		</divMoveDown>
-	</center>
 
-<!-- <a href= "https://instagram.com/maux.bit" style = "position: relative; font-family: fontBoi; top: 10vw; font-size: 25vw; color:blue; z-index: 1; text-decoration: none; text-shadow: 0px 0px 7px #FF07DD;">
-		<divMedia>
-		<center>
-	SEE_MORE
-</center>
-</divMedia> -->
+</divMoveDown>
 
-<center>
-
-					<p style =" font-family: fontBoi; font-size: 10vw; position: relative; color:white; z-index: 1; text-shadow: 0px 0px 7px #00FFCC; text-decoration: none; z-index: 1;">
+<p style =" font-family: fontBoi; font-size: 8vw; position: relative; color:white; z-index: 1; text-shadow: 0px 0px 7px #00FFCC; text-decoration: none; z-index: 1;">
 		venmo: @iammaux<br> if you like what i do
+	</p>
 
 
+<iframe width="100%" height="166vw" scrolling="no" frameborder="no" allow="autoplay"
+src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/932069671&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=false">
+</iframe>
+<div style="font-size: 3vw; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+	<a href="https://soundcloud.com/iammaux" title="M A U X" target="_blank" style="color: #cccccc; text-decoration: none;">
+		M A U X
+	</a> ·
+	<a href="https://soundcloud.com/iammaux/dos" title="DOS" target="_blank" style="color: #cccccc; text-decoration: none;">
+		DOS
+	</a>
+</div>
 
-<iframe width="100%" height="166vw" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/932069671&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 3vw; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;margin-top: -10vw;"><a href="https://soundcloud.com/iammaux" title="M A U X" target="_blank" style="color: #cccccc; text-decoration: none;">M A U X</a> · <a href="https://soundcloud.com/iammaux/dos" title="DOS" target="_blank" style="color: #cccccc; text-decoration: none;">DOS</a></div>
-
-</p>
-
-</center>
 
 <!-- 	<divMoveUp>
 
@@ -264,12 +286,6 @@ background-color: none;
 <img width= '100%' src="images\momo.gif">
 	</a>
 	</divMoveUp> -->
-</body>
-
-
-<body bgcolor="00000">
-
-<center>
 
 
 
@@ -287,55 +303,28 @@ background-color: none;
 
 </divMoveDown2> -->
 
-	<p style ="margin-bottom: 0;font-family: fontBoi; font-size: 10vw; margin-top: 10vw; position: relative; color:white; z-index: 1; text-shadow: 0px 0px 7px #00FFCC; text-decoration: none;">
+	<p style ="margin-bottom: 0;font-family: fontBoi; font-size: 8vw; position: relative; color:white; z-index: 1; text-shadow: 0px 0px 7px #00FFCC; text-decoration: none;">
 like and subscribe	</p>
 
-<p style = "">
-	  <div class="container" style=" font-size: 10vw;color: white; font-family: times new roman;">
-<!--   <h2 style="font-size: 10vw"><b>Watch our Music Video<br>
-  <i style="font-size: 10vw">Diving Into Mirrors</i></b></h2> -->
-<br>
-		<div class="container" style="font-size: 20vw;color: white; font-family: times new roman; padding-bottom: 20vw;">
-  <p></p>
 <div class="container">
 	<iframe class="responsive-iframe"
 	src="https://www.youtube.com/embed/EWIceb7HJz4"
 frameborder="0">
   </iframe>
 </div>
-</div>
 <br>
 
-</p>
 
-<!-- 	<divMoveUp>
-
-  	<a href="https://twitch.com/maux_mode" style=" z-index: 2; position: relative; text-decoration: none;">
-<img width= '25%'; src="images\logo\TwitchGlitchWhite.png" >
-	</a>
-	</divMoveUp> -->
- <divMoveRight>
-		<a href= "https://www.youtube.com/channel/UCFpp76bm9LjJLaRZu-un4Gw?sub_confirmation=1" style = "font-family: fontBoi2; font-size: 25vw; position: relative; color:black; z-index: 1; text-shadow: 0px 0px 7px #00FFCC; text-decoration: none;">
-		<divMedia>
-<center>
-	MA
-		</center>
-		</divMedia>
-</a>
+	<div class="imgContain2">
+		<a href="https://m.youtube.com/channel/UCFpp76bm9LjJLaRZu-un4Gw?sub_confirmation=1"
+		style = "z-index: 2;font-weight: 400;letter-spacing: 5vw;font-size: 100px;font-family: fontBoi2; color:black;text-shadow: 0px 0px 7px #00FFCC; text-decoration: none;">
+		<divMoveRight>
+	MAUX
 </divMoveRight>
-
-
-<divMoveLeft>
-		<a href= "https://www.youtube.com/channel/UCFpp76bm9LjJLaRZu-un4Gw?sub_confirmation=1" style = "right: -4.5vw; top:4.5vw; position: absolute; font-family: fontBoi2; font-size: 25vw; color:black; z-index: 1; text-decoration: none; text-shadow: 0px 0px 7px #00FFCC;">
-UX
-
 </a>
+<img src="images\maux\crave.png" width="100%">
 
-</divMoveLeft>
-
-<img src="images\maux\crave.png" style = "margin-top: -45vw;"width = "100%">
-
-
+</div>
 <!-- <a href="https://music.apple.com/us/album/of-darke-and-whimsy/1534562306?uo=4"" style="text-decoration: none;">
 <img width= '22%';
   src="images\logo\appleMusic.png">
@@ -376,7 +365,5 @@ frameborder="0">
 </div>
   -->
 
-  </center>
-  </div>
 </body>
 </html>
