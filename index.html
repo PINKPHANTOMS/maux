@@ -3,6 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="icon" href="images\logo\main.JPG">
+<link rel="stylesheet" href="styles.css">
 
 <title>
 
@@ -162,18 +163,23 @@ p {
 	height: 100%;
 	max-width: 700px;
 	text-align: center;
-	display: inline-block;
 	padding: 16px;
 	margin: auto;
 	background-color: black;
-	background-image: url("images/bg.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
 	overflow-x: hidden;
 
 	}
+
+
+	.fixed-bg {
+  background-image: url("images/bg.jpg");
+  min-height: 500px;
+	padding: none;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 	.container {
   position: relative;
@@ -224,8 +230,11 @@ p {
 
   </style>
 
+	<div class="fixed-bg">
 
 <body>
+
+
 	<divMoveDown>
 				<p style ="margin-top:10vw; font-family: fontBoi; font-size: 8vw; position: relative; color:gold; z-index: 1; text-shadow: 0px 0px 7px #FF07DD; text-decoration: none; z-index: 1;">
 				<a href = "https://youtu.be/UkmlRvEq-Ek" style ="color: gold; text-decoration: none;">
@@ -250,7 +259,7 @@ p {
 
 
 		<p style ="font-family: fontBoi; font-size: 8vw; position: relative; color:gold; text-shadow: 0px 0px 7px #FF07DD; text-decoration: none; z-index: 1;">
-		watch my dj set on
+		watch my dj set
 
 <div class = "imgContain">
 
@@ -280,7 +289,6 @@ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/93
 	</a>
 </div>
 
-
 <!-- 	<divMoveUp>
 
   	<a href="https://twitch.com/maux_mode" style=" top: -5vw; z-index: 2; position: relative; text-decoration: none;">
@@ -305,7 +313,7 @@ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/93
 </divMoveDown2> -->
 
 	<p style ="margin-bottom: 0;font-family: fontBoi; font-size: 8vw; position: relative; color:white; z-index: 1; text-shadow: 0px 0px 7px #00FFCC; text-decoration: none;">
-like and subscribe	</p>
+like and subscribe</p>
 
 <div class="container">
 	<iframe class="responsive-iframe"
@@ -367,4 +375,6 @@ frameborder="0">
   -->
 
 </body>
+</div>
+
 </html>
