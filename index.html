@@ -153,6 +153,7 @@ iframe {
 img {
 	border-radius: 16px;
 	text-align: center;
+	padding:none;
 }
 
 p {
@@ -162,9 +163,6 @@ p {
 	body{
 	max-width: 700px;
 	text-align: center;
-	display: inline-block;
-	padding: 16px;
-	margin: auto;
 	background-color: black;
 	background-image: url("images/imp.gif");
 	background-size: cover;
@@ -221,12 +219,18 @@ p {
   color: black;
 }
 
+.myClass {
+	padding: -16px;
+	margin: 0;
+}
   </style>
 
 
 <body>
 
-
+<div class="myClass">
+	<img src="images\me.gif" width="100%">
+</div>
 
 	<divMoveDown>
 				<p style ="margin-top:10vw; font-family: fontBoi; font-size: 8vw; position: relative; color:gold; z-index: 1; text-shadow: 0px 0px 7px #FF07DD; text-decoration: none; z-index: 1;">
