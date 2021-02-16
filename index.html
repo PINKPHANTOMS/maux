@@ -2,12 +2,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-	<link rel="icon" href="images\logo\main.JPG">
+	<link rel="icon" href="images\imp.gif">
 <link rel="stylesheet" href="styles.css">
 
 <title>
 
-  maux
+  MAUX
 
 </title>
 
@@ -234,6 +234,55 @@ p {
 	border-radius: 0;
 
 }
+
+
+:root {
+  --gutter: 20px;
+}
+
+.app {
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  /* grid-template-columns: var(--gutter) 1fr var(--gutter); */
+  align-content: start;
+}
+
+.app > * {
+  grid-column: 2 / -2;
+
+}
+
+.app > .full {
+  grid-column: 1 / -1;
+}
+
+.hs {
+  display: grid;
+  grid-gap: calc(var(--gutter) / 2);
+  grid-template-columns: repeat(6, calc(100% - var(--gutter) * 2));
+  grid-template-rows: minmax(350px, 1fr);
+  overflow-x:auto;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter));
+}
+
+
+/* Demo styles */
+
+/* body {
+  display: grid;
+  place-items: left;
+  background: #456173;
+} */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
   </style>
 
 
@@ -247,11 +296,52 @@ p {
 
 
 				<p style ="margin-top:80vh; font-family: fontBoi; font-size: 8vw; position: relative; color:gold; z-index: 1; text-shadow: 0px 0px 7px #FF07DD; text-decoration: none; z-index: 1;">
-
-					<iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FSOONSPINS%2Fmaux-dj-mix%2F" frameborder="0" ></iframe>
-
+					warehouse set
+					<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FSOONSPINS%2Fmaux-dj-mix%2F" frameborder="0" ></iframe>
 					<br>
 					<br>
+
+					WHAREHOUSE GALLERY
+
+
+
+					<div class="app">
+
+
+					  <ul class="hs">
+					    <li class="item" style="width: 100%;	background-size: cover; background-image: url(images/imp.gif)">
+
+							</li>
+
+							<li class="item" style="width: 100%;	background-size: cover; background-image: url(images/imp.gif)">
+
+							</li>
+
+							<li class="item" style="width: 100%;	background-size: cover; background-image: url(images/imp.gif)">
+
+							</li>
+
+							<li class="item" style="width: 100%;	background-size: cover; background-image: url(images/imp.gif)">
+
+							</li>
+
+							<li class="item" style="width: 100%;	background-size: cover; background-image: url(images/imp.gif)">
+
+							</li>
+
+							<li class="item" style="width: 100%;	background-size: cover; background-image: url(images/imp.gif)">
+
+							</li>
+
+					</ul>
+
+				</div>
+
+
+
+
+
+
 					<br>
 					<br>
 					<br>
