@@ -10,6 +10,7 @@
 		height: auto;
 		margin: auto;
 	}
+
 	#myNavBtns {
 		position: fixed;
 		top: 0;
@@ -21,6 +22,7 @@
 		transition: top 0.3s;
 		/* Transition effect when sliding down (and up) */
 	}
+
 	#myNavBtns button {
 		flex: 1;
 		padding: 1vw;
@@ -33,39 +35,47 @@
 		border-style: hidden;
 		border-bottom: 3px solid transparent;
 	}
+
 	#myNavBtns button:focus {
 		outline: 0vw solid white;
 		border-bottom: 3px solid cyan;
 		/* background-color: rgba(120,120,120,.5); */
 	}
+
 	#myNavBtns button:focus {
 		border-bottom: 3px solid cyan;
 		outline: 0vw solid white;
 	}
+
 	.imgContain2 {
 		position: relative;
 		width: 100% border: 3px solid black;
 		border-radius: 16px;
 		box-shadow: 0 0 2vw black;
 	}
+
 	.imgContain2 a {
 		z-index: 1;
 	}
+
 	.imgContain2 img {
 		display: block;
 		width: 100%;
 	}
+
 	.imgContain {
 		position: relative;
 		text-align: center;
 		height: 500px;
 	}
+
 	.imgContain img {
 		position: absolute;
 		width: 100%;
 		top: 0;
 		left: 0;
 	}
+
 	divMoveRight {
 		animation-fill-mode: forwards !important;
 		position: relative;
@@ -75,40 +85,48 @@
 		justify-content: center;
 		align-items: center;
 	}
+
 	@keyframes moveRight {
 		0% {
 			right: 80vw;
 			top: 20vw;
 		}
+
 		25% {
 			right: 0;
 			top: 0;
 		}
+
 		100% {
 			right: 0;
 			top: 0;
 		}
 	}
+
 	divMoveLeft {
 		animation-fill-mode: forwards !important;
 		position: relative;
 		animation-name: moveLeft;
 		animation-duration: 3s;
 	}
+
 	@keyframes moveLeft {
 		0% {
 			left: 150vw;
 			top: -90vw;
 		}
+
 		50% {
 			left: 0;
 			top: 0;
 		}
+
 		100% {
 			left: 0;
 			top: 0;
 		}
 	}
+
 	divMoveDown {
 		animation-fill-mode: forwards !important;
 		width: 100vw;
@@ -118,20 +136,24 @@
 		animation-fill-mode: none;
 		animation-duration: 2s;
 	}
+
 	@keyframes moveDown {
 		0% {
 			left: 0vw;
 			top: -200vw;
 		}
+
 		50% {
 			left: 0vw;
 			top: 0vw;
 		}
+
 		100% {
 			left: 0vw;
 			top: 0vw;
 		}
 	}
+
 	divMoveDown2 {
 		animation-fill-mode: forwards !important;
 		width: 100vw;
@@ -141,20 +163,24 @@
 		animation-fill-mode: none;
 		animation-duration: 2s;
 	}
+
 	@keyframes moveDown2 {
 		0% {
 			left: 0vw;
 			top: 100vw;
 		}
+
 		25% {
 			left: 0vw;
 			top: -17vw;
 		}
+
 		100% {
 			left: 18vw;
 			top: -17vw;
 		}
 	}
+
 	divMoveUp {
 		animation-fill-mode: forwards !important;
 		width: 100px;
@@ -163,43 +189,53 @@
 		animation-name: moveUp;
 		animation-duration: 5s;
 	}
+
 	@keyframes moveUp {
 		0% {
 			left: 0vw;
 			top: 100vw;
 		}
+
 		25% {
 			left: 0vw;
 			top: 20vw;
 		}
+
 		100% {
 			left: 0vw;
 			top: 20vw;
 		}
 	}
+
 	@font-face {
 		font-family: fontBoi;
 		src: url(fonts/Geo-Regular.ttf);
 	}
+
 	@font-face {
 		font-family: fontBoi2;
 		src: url(fonts/Djentfont.ttf);
 	}
+
 	divMedia {
 		line-height: .6;
 		position: absolute;
 	}
+
 	-webkit-background-size: 2650px 1440px;
+
 	iframe {
 		border-radius: 16px;
 		box-shadow: 0 0 5vw black;
 		text-align: center;
 	}
+
 	img {
 		border-radius: 16px;
 		text-align: center;
 		padding: none;
 	}
+
 	body {
 		text-align: center;
 		display: inline;
@@ -207,6 +243,7 @@
 		background-color: rgba(0, 0, 0);
 		overflow-x: hidden;
 	}
+
 	.container {
 		position: relative;
 		overflow: hidden;
@@ -215,6 +252,7 @@
 		box-shadow: 0 0 2vw black;
 		/* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 	}
+
 	.responsive-iframe {
 		position: absolute;
 		top: 0;
@@ -224,6 +262,7 @@
 		width: 100%;
 		height: 100%;
 	}
+
 	.button {
 		background-color: none;
 		border: none;
@@ -241,36 +280,44 @@
 		transition-duration: 0.4s;
 		cursor: pointer;
 	}
+
 	.button1 {
 		background-color: none;
 		color: black;
 		text-align: center;
 		border: 2px solid #00000;
 	}
+
 	.button1:hover {
 		background-color: black;
 		color: black;
 	}
+
 	.myClass {
 		z-index: -100;
 		position: fixed;
 		text-align: center;
 	}
+
 	.myClass img {
 		width: 100vw;
 		height: 100vh;
 		object-fit: cover;
 	}
+
 	#moreBack {
 		display: none;
 	}
+
 	#moreLyrics {
 		display: inline;
 	}
+
 	#moreFront {
 		display: none;
 	}
 </style>
+
 <body>
 	<div class="myClass">
 		<img src="images/bgs/newbg.gif">
@@ -289,8 +336,8 @@
 					MAUX MIX #3
 					<!-- <img src="images\logo\soonspins.png" width="28%" style = "position: absolute;top: 17vw;right: 0;z-index: 1;"> -->
 				</span>
-			<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FSOONSPINS%2Fmaux-mix-3%2F" frameborder="0" ></iframe>
-		</p>
+				<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FSOONSPINS%2Fmaux-mix-3%2F" frameborder="0"></iframe>
+			</p>
 			<br>
 			<br>
 			<br>
@@ -301,10 +348,11 @@
 				</span>
 				<iframe width="70%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FSOONSPINS%2Fmaux-dj-mix%2F" frameborder="0"></iframe>
 			</p>
-				<br>
-				<br>
-				<br>
-			<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/tv/CLXnFXjJjrU/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: auto; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+			<br>
+			<br>
+			<br>
+			<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/tv/CLXnFXjJjrU/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13"
+				style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: auto; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
 				<div style="padding:16px; text-align: center;">
 					<a href="https://www.instagram.com/tv/CLXnFXjJjrU/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
 						<div style=" display: flex; flex-direction: row; align-items: center;">
@@ -392,7 +440,8 @@
 			<div
 				style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
 				<a href="https://soundcloud.com/iammaux" title="M A U X" target="_blank" style="color: #cccccc; text-decoration: none;">M A U X</a> · <a href="https://soundcloud.com/iammaux/sets/new-music" title="NEW MUSIC" target="_blank"
-					style="color: #cccccc; text-decoration: none;">NEW MUSIC</a></div>
+					style="color: #cccccc; text-decoration: none;">NEW MUSIC</a>
+			</div>
 			</p>
 			<br>
 			<br>
@@ -434,6 +483,7 @@
 	var myPReelBtn = document.getElementById("myPReelBtn");
 	const el = document.getElementById('myNavBtns');
 	var scale;
+
 	function frontTime() {
 		document.body.scrollTop = 0;
 		document.documentElement.scrollTop = 0;
@@ -450,6 +500,7 @@
 			morePReel.style.display = "none";
 		}
 	}
+
 	function backTime() {
 		document.body.scrollTop = 0;
 		document.documentElement.scrollTop = 0;
@@ -466,6 +517,7 @@
 			morePReel.style.display = "none";
 		}
 	}
+
 	function lyricTime() {
 		document.body.scrollTop = 0;
 		document.documentElement.scrollTop = 0;
@@ -482,6 +534,7 @@
 			morePReel.style.display = "none";
 		}
 	}
+
 	function pReelTime() {
 		document.body.scrollTop = 0;
 		document.documentElement.scrollTop = 0;
@@ -509,4 +562,5 @@
 		prevScrollpos = currentScrollPos;
 	}
 </script>
+
 </html>
